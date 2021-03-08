@@ -1,7 +1,5 @@
 # Keytar CLI
 
-## About
-
 keytar cli is a simple command line interface into GitHub's [node-keytar](https://github.com/atom/node-keytar) - a password/secrets management utility written for node.
 
 ## Getting Started

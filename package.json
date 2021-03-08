@@ -14,7 +14,7 @@
     "url": "https://github.com/emacs-grammarly/keytar-cli-2.git"
   },
   "keywords": ["keytar", "keychain", "secret", "password", "secrets", "passwords"],
-  "author": "",
+  "author": "Jen-Chieh Shen",
   "license": "MIT",
   "dependencies": {
     "keytar": "^7.4.0",

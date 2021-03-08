@@ -1,8 +1,6 @@
 const keytar = require("keytar");
-const prompt = require("prompt");
-const { promisify } = require("util");
 
-exports.command = "set [service] [account]";
+exports.command = "set [service] [account] [password]";
 exports.desc = "set credentials for a service";
 exports.builder = {
   service: {
@@ -12,23 +10,17 @@ exports.builder = {
   account: {
     alias: "a",
     requiresArg: true
+  },
+  password: {
+    alias: "p",
+    requiresArg: true
   }
 };
 
-exports.handler = async ({ service, account }) => {
-  if (!service || !account) {
-    throw new Error("provide required params (service, account)");
+exports.handler = async ({ service, account, password }) => {
+  if (!service || !account || !password) {
+    throw new Error("provide required params (service, account, password)");
   }
-  prompt.start();
-  const { password } = await promisify(prompt.get)({
-    properties: {
-      password: {
-        description: `Enter the password for ${account}@${service}`,
-        hidden: true
-      }
-    }
-  });
-
   await keytar.setPassword(service, account, password);
   console.log(`Successfully set the creds for ${account}@${service}!`);
 };

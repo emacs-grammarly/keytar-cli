@@ -1,5 +1,8 @@
 # Keytar CLI
 
+[![Release](https://img.shields.io/github/release/emacs-grammarly/keytar-cli-2.svg?logo=github)](https://github.com/emacs-grammarly/keytar-cli-2/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 keytar cli is a simple command line interface into GitHub's [node-keytar](https://github.com/atom/node-keytar) - a password/secrets management utility written for node.
 
 ## Getting Started

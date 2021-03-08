@@ -1,7 +1,7 @@
 {
-  "name": "keytar-cli",
+  "name": "keytar-cli-2",
   "version": "0.1.0",
-  "description": "",
+  "description": "CLI for keytar",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,14 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mattrenaud/keytar-cli.git"
+    "url": "https://github.com/emacs-grammarly/keytar-cli-2.git"
   },
   "keywords": ["keytar", "keychain", "secret", "password", "secrets", "passwords"],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "keytar": "^4.3.0",
-    "prompt": "^1.0.0",
+    "keytar": "^7.4.0",
     "yargs": "^12.0.5"
   }
 }

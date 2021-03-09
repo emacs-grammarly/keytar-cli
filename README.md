@@ -22,9 +22,11 @@ $ keytar --help
 keytar <cmd> [args]
 
 Commands:
-  keytar delete [service] [account]          Delete the stored password for the `service` and `account`.
-  keytar find [service]                      find credentials for a service
-  keytar set [service] [account] [password]  set credentials for a service
+  keytar delete-pass [service] [account]          Delete the stored password for the `service` and `account`
+  keytar find-creds [service]                     Find all accounts and password for the `service` in the keychain
+  keytar find-pass [service]                      Find a password for the `service` in the keychain
+  keytar get-pass [service] [account]             Get the stored password for the `service` and `account`
+  keytar set-pass [service] [account] [password]  Save the `password` for the `service` and `account` to the keychain
 
 Options:
   --version  Show version number                                       [boolean]

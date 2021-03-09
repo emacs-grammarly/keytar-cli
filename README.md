@@ -8,9 +8,9 @@ keytar cli is a simple command line interface into GitHub's [node-keytar](https:
 ## Getting Started
 
 ```bash
-$ npx keytar-cli-2 set -s service1 -a testuser
-prompt: Enter the password for testuser@service1:
+$ npx keytar-cli-2 set -s service1 -a testuser -p xxxxxx
 Successfully set the creds for testuser@service1!
+
 $ npx keytar-cli find -s service1
 Here are the creds for service1 [ { account: 'testuser', password: 'password' } ]
 ```

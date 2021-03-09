@@ -30,9 +30,9 @@ Options:
   --version  Show version number                                       [boolean]
   --help     Show help                                                 [boolean]
 
-$ keytar set -s service1 -a testuser
-prompt: Enter the password for testuser@service1:
+$ keytar set -s service1 -a testuser -p xxxxxx
 Successfully set the creds for testuser@service1!
+
 $ keytar find -s service1
 Here are the creds for service1 [ { account: 'testuser', password: 'password' } ]
 ```

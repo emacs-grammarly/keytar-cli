@@ -29,5 +29,5 @@ exports.handler = async ({ service, account }) => {
     throw new Error("provide required params (service, account)");
   }
   const pass = await keytar.getPassword(service, account);
-  console.log(`Here is the password for ${account}@${service}`, pass);
+  console.log(pass);
 };

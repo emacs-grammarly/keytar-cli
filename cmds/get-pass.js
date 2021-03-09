@@ -1,6 +1,6 @@
 /**
- * $File: delete.js $
- * $Date: 2021-03-08 21:52:38 $
+ * $File: get-pass.js $
+ * $Date: 2021-03-09 12:43:45 $
  * $Revision: $
  * $Creator: Jen-Chieh Shen $
  * $Notice: See LICENSE.txt for modification and distribution information
@@ -11,8 +11,8 @@
 
 const keytar = require("keytar");
 
-exports.command = "delete [service] [account]";
-exports.desc = "Delete the stored password for the `service` and `account`.";
+exports.command = "get-pass [service] [account]";
+exports.desc = "Get the stored password for the `service` and `account`";
 exports.builder = {
   service: {
     alias: "s",
@@ -28,6 +28,6 @@ exports.handler = async ({ service, account }) => {
   if (!service || !account) {
     throw new Error("provide required params (service, account)");
   }
-  await keytar.deletePassword(service, account);
-  console.log(`Successfully delete the creds for ${account}@${service}!`);
+  const pass = await keytar.getPassword(service, account);
+  console.log(`Here is the password for ${account}@${service}`, pass);
 };

@@ -33,5 +33,5 @@ exports.handler = async ({ service, account, password }) => {
     throw new Error("provide required params (service, account, password)");
   }
   await keytar.setPassword(service, account, password);
-  console.log(`Successfully set the creds for ${account}@${service}!`);
+  console.log(`Successfully set the password for ${account}@${service}!`);
 };

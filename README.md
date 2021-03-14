@@ -1,6 +1,6 @@
 # Keytar CLI
 
-[![Release](https://img.shields.io/github/release/emacs-grammarly/keytar-cli-2.svg?logo=github)](https://github.com/emacs-grammarly/keytar-cli-2/releases/latest)
+[![Release](https://img.shields.io/github/release/emacs-grammarly/keytar-cli.svg?logo=github)](https://github.com/emacs-grammarly/keytar-cli/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 keytar cli is a simple command line interface into GitHub's [node-keytar](https://github.com/atom/node-keytar) - a password/secrets management utility written for node.
@@ -8,7 +8,7 @@ keytar cli is a simple command line interface into GitHub's [node-keytar](https:
 ## Getting Started
 
 ```bash
-$ npx keytar-cli-2 set -s service1 -a testuser -p xxxxxx
+$ npx @emacs-grammarly/keytar-cli set -s service1 -a testuser -p xxxxxx
 Successfully set the creds for testuser@service1!
 
 $ npx keytar-cli find -s service1
@@ -17,7 +17,7 @@ Here are the creds for service1 [ { account: 'testuser', password: 'password' } 
 or
 
 ```bash
-$ npm install -g keytar-cli-2
+$ npm install -g @emacs-grammarly/keytar-cli
 $ keytar --help
 keytar <cmd> [args]
 

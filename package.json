@@ -1,5 +1,5 @@
 {
-  "name": "keytar-cli-2",
+  "name": "@emacs-grammarly/keytar-cli",
   "version": "0.1.2",
   "description": "CLI for keytar",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/emacs-grammarly/keytar-cli-2.git"
+    "url": "https://github.com/emacs-grammarly/keytar-cli.git"
   },
   "keywords": ["keytar", "keychain", "secret", "password", "secrets", "passwords"],
   "author": "Jen-Chieh Shen",
@@ -19,5 +19,8 @@
   "dependencies": {
     "keytar": "^7.4.0",
     "yargs": "^12.0.5"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

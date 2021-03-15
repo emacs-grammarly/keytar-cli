@@ -1,5 +1,6 @@
 # Keytar CLI
 
+[![Build Status](https://travis-ci.com/emacs-grammarly/keytar-cli.svg?branch=master)](https://travis-ci.com/emacs-grammarly/keytar-cli)
 [![Release](https://img.shields.io/github/release/emacs-grammarly/keytar-cli.svg?logo=github)](https://github.com/emacs-grammarly/keytar-cli/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 

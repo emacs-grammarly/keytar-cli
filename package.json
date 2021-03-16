@@ -13,12 +13,19 @@
     "type": "git",
     "url": "https://github.com/emacs-grammarly/keytar-cli.git"
   },
-  "keywords": ["keytar", "keychain", "secret", "password", "secrets", "passwords"],
+  "keywords": [
+    "keytar",
+    "keychain",
+    "secret",
+    "password",
+    "secrets",
+    "passwords"
+  ],
   "author": "Jen-Chieh Shen",
   "license": "MIT",
   "dependencies": {
     "keytar": "^7.4.0",
-    "yargs": "^12.0.5"
+    "yargs": "^16.2.0"
   },
   "publishConfig": {
     "access": "public"

@@ -216,9 +216,9 @@ isarray@~1.0.0:
   integrity sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
 
 keytar@^7.4.0:
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/keytar/-/keytar-7.4.0.tgz#0a508d64850ca05aa3ba4127818037d13ca3219f"
-  integrity sha512-nELmc35YjSE4ZNSFaID/743CgDt/MdV4JLX7rRewAh9mKvU72RtF3uJMY0MdMpwdDYZhmD8FSdRCD1J97lEyVg==
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/keytar/-/keytar-7.5.0.tgz#d9f2c4ea591b12a7b23adc5f731f216a062ffc26"
+  integrity sha512-g3GPp8abi7FE8mlE16LdxLVXZ8cLLq8O/gYrjxy1IGTNVYycHnsElXIKFS/Qj+AfbCyz59H+1j6ehkv6RU6HMA==
   dependencies:
     node-addon-api "^3.0.0"
     prebuild-install "^6.0.0"

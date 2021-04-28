@@ -17,7 +17,6 @@ jobs:
       matrix:
         os: [ubuntu-latest]
 
-
     steps:
     - uses: actions/setup-node@v2
       with:

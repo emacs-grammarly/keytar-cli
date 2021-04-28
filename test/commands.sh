@@ -14,5 +14,5 @@ npm install
 
 CMD="node index.js"
 
-echo "'keytar-cli' version: "
+echo "[INFO] 'keytar-cli' version: "
 $CMD --version

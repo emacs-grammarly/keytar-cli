@@ -8,7 +8,11 @@
 #                   Copyright © 2021 by Shen, Jen-Chieh $
 # ========================================================================
 
+echo $PWD
+
 cd ..
+
+echo $PWD
 
 npm install
 

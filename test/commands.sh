@@ -8,6 +8,10 @@
 #                   Copyright © 2021 by Shen, Jen-Chieh $
 # ========================================================================
 
+# Following command is commented due to CI
+#
+#cd ..
+
 npm install
 
 CMD="node index.js"

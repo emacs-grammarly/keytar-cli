@@ -1,7 +1,9 @@
-# Keytar CLI
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Release](https://img.shields.io/github/release/emacs-grammarly/keytar-cli.svg?logo=github)](https://github.com/emacs-grammarly/keytar-cli/releases/latest)
+[![npm](https://img.shields.io/npm/v/@emacs-grammarly/keytar-cli?logo=npm&color=green)](https://www.npmjs.com/package/@emacs-grammarly/keytar-cli)
+
+# Keytar CLI
+
 [![CI](https://github.com/emacs-grammarly/keytar-cli/actions/workflows/test.yml/badge.svg)](https://github.com/emacs-grammarly/keytar-cli/actions/workflows/test.yml)
 [![dependencies Status](https://status.david-dm.org/gh/emacs-grammarly/keytar-cli.svg)](https://david-dm.org/emacs-grammarly/keytar-cli)
 

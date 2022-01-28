@@ -1,7 +1,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Release](https://img.shields.io/github/release/emacs-grammarly/keytar-cli.svg?logo=github)](https://github.com/emacs-grammarly/keytar-cli/releases/latest)
 [![npm](https://img.shields.io/npm/v/@emacs-grammarly/keytar-cli?logo=npm&color=green)](https://www.npmjs.com/package/@emacs-grammarly/keytar-cli)
-[![download-month](https://img.shields.io/npm/dm/@emacs-grammarly/keytar-cli.svg)](https://npmcharts.com/compare/@emacs-grammarly/keytar-cli?minimal=true)
+[![npm-dm](https://img.shields.io/npm/dm/@emacs-grammarly/keytar-cli.svg)](https://npmcharts.com/compare/@emacs-grammarly/keytar-cli?minimal=true)
 
 # Keytar CLI
 

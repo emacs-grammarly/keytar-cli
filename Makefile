@@ -7,4 +7,5 @@ SHELL := /usr/bin/env bash
 test-commands:
 	@echo "Test Commands..."
 	chmod -R 777 ./
+	npm install
 	./test/commands.sh

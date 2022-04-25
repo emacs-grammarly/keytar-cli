@@ -22,5 +22,11 @@
 # Test keytar commands.
 #
 
-echo "[INFO] 'keytar-cli' version: "
+echo '[INFO] keytar-cli version: '
 keytar --version
+
+echo 'Set password'
+keytar set-pass -s service1 -a testuser -p xxxxxx
+
+echo 'Find credentails'
+keytar find-creds -s service1

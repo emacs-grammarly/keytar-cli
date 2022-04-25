@@ -24,6 +24,10 @@ or
 ```bash
 $ npm install -g @emacs-grammarly/keytar-cli
 $ keytar --help
+keytar is the main command, used to manage your passwords and credentials
+
+Keytar is a native Node module to get, add, replace, and delete passwords in system's keychain.
+
 Usage: keytar <command> [options..]
 
 Commands:
@@ -34,8 +38,8 @@ Commands:
   set-pass [service] [account] [password]  Save the `password` for the `service` and `account` to the keychain
 
 Options:
-  --version  Show version number                                       [boolean]
-  --help     Show help                                                 [boolean]
+  --version  Show version number  [boolean]
+  --help     Show help            [boolean]
 
 $ keytar set -s service1 -a testuser -p xxxxxx
 Successfully set the creds for testuser@service1!

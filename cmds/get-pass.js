@@ -11,16 +11,20 @@
 
 const keytar = require("keytar");
 
-exports.command = "get-pass [service] [account]";
-exports.desc = "Get the stored password for the `service` and `account`";
+exports.command = ['get-pass [service] [account]'];
+exports.desc = 'get the stored password for the `service` and `account`';
 exports.builder = {
   service: {
-    alias: "s",
-    requiresArg: true
+    description: 'service title',
+    alias: 's',
+    requiresArg: true,
+    type: 'string',
   },
   account: {
-    alias: "a",
-    requiresArg: true
+    description: 'account name',
+    alias: 'a',
+    requiresArg: true,
+    type: 'string',
   }
 };
 

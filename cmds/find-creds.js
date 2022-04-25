@@ -11,11 +11,14 @@
 
 const keytar = require("keytar");
 
-exports.command = "find-creds [service]";
-exports.desc = "Find all accounts and password for the `service` in the keychain";
+exports.command = ['find-creds [service]'];
+exports.desc = 'find all accounts and password for the `service` in the keychain';
 exports.builder = {
   service: {
-    alias: "s"
+    description: 'service title',
+    alias: 's',
+    requiresArg: true,
+    type: 'string',
   }
 };
 

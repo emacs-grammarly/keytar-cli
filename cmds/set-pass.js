@@ -11,20 +11,26 @@
 
 const keytar = require("keytar");
 
-exports.command = "set-pass [service] [account] [password]";
-exports.desc = "Save the `password` for the `service` and `account` to the keychain";
+exports.command = ['set-pass [service] [account] [password]'];
+exports.desc = 'save the `password` for the `service` and `account` to the keychain';
 exports.builder = {
   service: {
-    alias: "s",
-    requiresArg: true
+    description: 'service title',
+    alias: 's',
+    requiresArg: true,
+    type: 'string',
   },
   account: {
-    alias: "a",
-    requiresArg: true
+    description: 'account name',
+    alias: 'a',
+    requiresArg: true,
+    type: 'string',
   },
   password: {
-    alias: "p",
-    requiresArg: true
+    description: 'password or credentials',
+    alias: 'p',
+    requiresArg: true,
+    type: 'string',
   }
 };
 

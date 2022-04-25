@@ -8,7 +8,7 @@ on:
     branches:
       - master
     paths-ignore:
-    - '**.md'
+      - '**.md'
   workflow_dispatch:
 
 concurrency:
@@ -24,11 +24,11 @@ jobs:
         os: [ubuntu-latest, macos-latest, windows-latest]
 
     steps:
-    - uses: actions/checkout@v2
-
     - uses: actions/setup-node@v2
       with:
         node-version: '16'
+
+    - uses: actions/checkout@v2
 
     - name: Prepare Keytar (Unix)
       if: matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest'

@@ -42,4 +42,4 @@ jobs:
 
     - uses: actions/checkout@v2
     - name: Test commands
-      run: ./test/commands.sh
+      run: make test-commands

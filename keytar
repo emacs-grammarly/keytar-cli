@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+const yargs = require('yargs');
+
+const usage = `keytar is the main command, used to get, add, replace, and delete passwords in system's keychain.
+
+Usage: keytar <command> [options..]`;
+
+yargs
+  .usage(usage)
+  .scriptName('')
+  .commandDir('cmds', {
+    recurse: true,
+  })
+  .command({
+    command: '*',
+    handler() { yargs.showHelp(); }
+  })
+  .showHelpOnFail(true)
+  .demandCommand()
+  .wrap(yargs.terminalWidth())
+  .help().argv;

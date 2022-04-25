@@ -6,4 +6,5 @@ SHELL := /usr/bin/env bash
 ## Development
 test-commands:
 	@echo "Test Commands..."
+	chmod -R 777 ./
 	./test/commands.sh

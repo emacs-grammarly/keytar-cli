@@ -2,7 +2,7 @@
   "name": "@emacs-grammarly/keytar-cli",
   "version": "0.1.4",
   "description": "CLI for keytar",
-  "main": "index.js",
+  "main": "keytar",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

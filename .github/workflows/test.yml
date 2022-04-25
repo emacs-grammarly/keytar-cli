@@ -39,7 +39,6 @@ jobs:
       if: matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest'
       run: |
         chmod -R 777 ./
-        apt-get install libsecret-1-dev
         .github/scripts/setup-keytar
 
     - name: Prepare Keytar (Windows)

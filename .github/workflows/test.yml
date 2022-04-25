@@ -33,7 +33,7 @@ jobs:
     - name: Setup Prerequisites
       if: matrix.os == 'ubuntu-latest'
       run: |
-        apt-get install libsecret-1-dev
+        sudo apt-get install libsecret-1-dev
 
     - name: Prepare Keytar (Unix)
       if: matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest'

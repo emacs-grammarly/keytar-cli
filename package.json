@@ -1,6 +1,6 @@
 {
   "name": "@emacs-grammarly/keytar-cli",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "CLI for keytar",
   "main": "keytar",
   "scripts": {

@@ -12,7 +12,7 @@ keytar cli is a simple command line interface into GitHub's [node-keytar](https:
 
 ## Getting Started
 
-```bash
+```
 $ npx @emacs-grammarly/keytar-cli set -s service1 -a testuser -p xxxxxx
 Successfully set the creds for testuser@service1!
 
@@ -21,7 +21,7 @@ Here are the creds for service1 [ { account: 'testuser', password: 'password' } 
 ```
 or
 
-```bash
+```
 $ npm install -g @emacs-grammarly/keytar-cli
 $ keytar --help
 keytar is the main command, used to manage your passwords and credentials

@@ -13,10 +13,10 @@ keytar cli is a simple command line interface into GitHub's [node-keytar](https:
 ## Getting Started
 
 ```
-$ npx @emacs-grammarly/keytar-cli set -s service1 -a testuser -p xxxxxx
+$ npx @emacs-grammarly/keytar-cli set-pass -s service1 -a testuser -p xxxxxx
 Successfully set the creds for testuser@service1!
 
-$ npx keytar-cli find -s service1
+$ npx keytar-cli find-creds -s service1
 Here are the creds for service1 [ { account: 'testuser', password: 'password' } ]
 ```
 or
@@ -41,10 +41,10 @@ Options:
   --version  Show version number  [boolean]
   --help     Show help            [boolean]
 
-$ keytar set -s service1 -a testuser -p xxxxxx
+$ keytar set-pass -s service1 -a testuser -p xxxxxx
 Successfully set the creds for testuser@service1!
 
-$ keytar find -s service1
+$ keytar find-creds -s service1
 Here are the creds for service1 [ { account: 'testuser', password: 'password' } ]
 ```
 

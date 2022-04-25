@@ -21,7 +21,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        os:
+        # Issue from X11, https://github.com/atom/node-keytar/issues/224
+        #- ubuntu-latest
+        - macos-latest
+        - windows-latest
 
     steps:
     - uses: actions/setup-node@v2
@@ -29,13 +33,6 @@ jobs:
         node-version: '16'
 
     - uses: actions/checkout@v2
-
-    - name: Setup Prerequisites
-      if: matrix.os == 'ubuntu-latest'
-      run: |
-        sudo apt-get install libsecret-1-dev
-        sudo apt install gnupg2 pass 
-        gpg2 --full-generate-key
 
     - name: Prepare Keytar (Unix)
       if: matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest'

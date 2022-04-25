@@ -2,7 +2,9 @@
 
 const yargs = require('yargs');
 
-const usage = `keytar is the main command, used to get, add, replace, and delete passwords in system's keychain.
+const usage = `keytar is the main command, used to manage your passwords and credentials
+
+Keytar is a native Node module to get, add, replace, and delete passwords in system's keychain.
 
 Usage: keytar <command> [options..]`;
 
